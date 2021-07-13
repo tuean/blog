@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://tuean.cn/2019/10/09/hexo/</loc>
+    <lastmod>2021-07-13</lastmod>
+  </url>
+  <url>
     <loc>http://tuean.cn/2019/09/29/tools/</loc>
     <lastmod>2021-07-13</lastmod>
   </url>
@@ -142,10 +146,6 @@
   </url>
   <url>
     <loc>http://tuean.cn/2019/10/25/amazon-sprider/</loc>
-    <lastmod>2019-10-30</lastmod>
-  </url>
-  <url>
-    <loc>http://tuean.cn/2019/10/09/hexo/</loc>
     <lastmod>2019-10-30</lastmod>
   </url>
   <url>
