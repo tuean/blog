@@ -347,20 +347,6 @@
   </url>
   
   <url>
-    <loc>http://tuean.cn/tags/css/</loc>
-    <lastmod>2021-07-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://tuean.cn/tags/daterangepicker/</loc>
-    <lastmod>2021-07-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://tuean.cn/tags/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2021-07-13</lastmod>
     <changefreq>daily</changefreq>
@@ -382,7 +368,35 @@
   </url>
   
   <url>
+    <loc>http://tuean.cn/tags/css/</loc>
+    <lastmod>2021-07-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tuean.cn/tags/daterangepicker/</loc>
+    <lastmod>2021-07-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://tuean.cn/tags/dubbo/</loc>
+    <lastmod>2021-07-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tuean.cn/tags/elasticsearch/</loc>
+    <lastmod>2021-07-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tuean.cn/tags/git/</loc>
     <lastmod>2021-07-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -417,7 +431,14 @@
   </url>
   
   <url>
-    <loc>http://tuean.cn/tags/git/</loc>
+    <loc>http://tuean.cn/tags/mac-plugin/</loc>
+    <lastmod>2021-07-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tuean.cn/tags/markdown/</loc>
     <lastmod>2021-07-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -431,14 +452,21 @@
   </url>
   
   <url>
-    <loc>http://tuean.cn/tags/mac-plugin/</loc>
+    <loc>http://tuean.cn/tags/react/</loc>
     <lastmod>2021-07-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://tuean.cn/tags/markdown/</loc>
+    <loc>http://tuean.cn/tags/redis-cluster/</loc>
+    <lastmod>2021-07-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tuean.cn/tags/session/</loc>
     <lastmod>2021-07-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -466,21 +494,7 @@
   </url>
   
   <url>
-    <loc>http://tuean.cn/tags/redis-cluster/</loc>
-    <lastmod>2021-07-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://tuean.cn/tags/react/</loc>
-    <lastmod>2021-07-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://tuean.cn/tags/session/</loc>
+    <loc>http://tuean.cn/tags/shadowsocks/</loc>
     <lastmod>2021-07-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -495,6 +509,13 @@
   
   <url>
     <loc>http://tuean.cn/tags/springboot/</loc>
+    <lastmod>2021-07-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tuean.cn/tags/tomcat/</loc>
     <lastmod>2021-07-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -522,7 +543,7 @@
   </url>
   
   <url>
-    <loc>http://tuean.cn/tags/tomcat/</loc>
+    <loc>http://tuean.cn/tags/watermark/</loc>
     <lastmod>2021-07-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -536,28 +557,7 @@
   </url>
   
   <url>
-    <loc>http://tuean.cn/tags/watermark/</loc>
-    <lastmod>2021-07-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://tuean.cn/tags/shadowsocks/</loc>
-    <lastmod>2021-07-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://tuean.cn/tags/api/</loc>
-    <lastmod>2021-07-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://tuean.cn/tags/elasticsearch/</loc>
     <lastmod>2021-07-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
