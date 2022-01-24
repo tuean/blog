@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>tuean</title><meta name="description" content="tuean&#39;s blog"><meta name="keywords" content="tuean blog"><meta name="author" content="tuean"><meta name="copyright" content="tuean"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/avatar.png"><link rel="canonical" href="http://tuean.cn/page/2/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="tuean"><meta property="og:url" content="http://tuean.cn/page/2/"><meta property="og:site_name" content="tuean"><meta property="og:description" content="tuean&#39;s blog"><meta property="og:image" content="http://tuean.cn/img/avatar.png"><meta property="article:published_time" content="2022-01-24T15:22:29.184Z"><meta property="article:modified_time" content="2022-01-24T15:22:29.184Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: true,
+  copyright: {"languages":{"author":"Author: tuean","link":"Link: ","source":"Source: tuean","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: true    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 6.0.0"></head><body><canvas class="fireworks"></canvas><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">44</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">37</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://i.loli.net/2019/10/23/rGVfgibcAOs49EM.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">tuean</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">tuean</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/tuean" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:tuean_z@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/05/13/jvm%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%E7%82%B9/" title="jvm">     <img class="post_bg" data-src="https://i.loli.net/2021/05/13/72t9SDG3YLxd68o.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="jvm"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/13/jvm%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%E7%82%B9/" title="jvm">jvm</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2021-05-13 11:02:32"><i class="far fa-calendar-alt"></i>2021-05-13</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-08-19 16:36:45"><i class="fas fa-history"></i>2021-08-19</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/jvm/">jvm</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/java/">java</a></span></div><div class="content">jvm相关的一些博文
+入门科普，围绕JVM的各种外挂技术
+
+jvm启动参数配置XX:+AlwaysPreTouch  所有内存指定写0  降低启动时间
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/02/18/tmp-tomcat/" title="tmp-tomcat">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/NrP3qR5p2eIt4SD.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="tmp-tomcat"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/02/18/tmp-tomcat/" title="tmp-tomcat">tmp-tomcat</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2021-02-18 14:51:57"><i class="far fa-calendar-alt"></i>2021-02-18</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:57:27"><i class="fas fa-history"></i>2021-02-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/tomcat/">tomcat</a></span></div><div class="content">tomcat临时目录问题问题简述tomcat服务出现异常
+1org.springframework.web.multipart.MultipartException
+
+在上传文件接口中可能出现该异常，在其他post方法中也可能抛出该问题。
+其原因为tomcat会在接受post请求后默认在/tmp文件夹下创建临时文件，路径例如：
+1/tmp/tomcat.4247994877978548129.7777/work/Tomcat/localhost/api
+
+而一些linux发行版会定期删除/tmp文件夹下长期不访问的内容，如centos下
+1/usr/lib/tmpfiles.d/tmp.conf
+
+
+
+123456789101112131415161718#  This file is part of systemd.##  systemd is free software; you can redistribute it and/or modify it#  under the terms of the GNU Lesser General Public License as pub ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/12/24/session-invalid/" title="session-invalid">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/3koWlriFRqBEZcT.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="session-invalid"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/12/24/session-invalid/" title="session-invalid">session-invalid</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-12-24 22:28:40"><i class="far fa-calendar-alt"></i>2020-12-24</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:53:07"><i class="fas fa-history"></i>2021-02-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/chrome/">chrome</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/session/">session</a></span></div><div class="content">问题描述目前我司使用session作为登录方案，使用了微前端的技术方案整合多个业务组件。在退出时，使用了session.invalidate() 方法进行session的退出清理工作。但是在一些偶发情况下，会出现session is already invalidated的报错产生。
+处理先说结论，这是由于不同框架对于session的实现类不同，导致其处理逻辑不同导致的。对与tomcat来说，其中的session实现类，对于session保存方式为存储为文件，对于invalidate的内部逻辑是删除对应的session文件。而对于springmvc等框架而言，session存与内存中，invalidate方法仅将其标注为validFlag=true，实际对象仍存在，故会显示上述错误。
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/12/02/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84bash%E8%84%9A%E6%9C%AC/" title="sh">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/o7jSzVZ4n9RBl5I.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="sh"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/12/02/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84bash%E8%84%9A%E6%9C%AC/" title="sh">sh</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-12-02 17:15:54"><i class="far fa-calendar-alt"></i>2020-12-02</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-07-20 14:27:18"><i class="fas fa-history"></i>2021-07-20</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/shell/">shell</a></span></div><div class="content">查询大文件1find . -type f -size +800M
+大文件路径1find . -type f -size +800M  -print0 | xargs -0 ls -l
+
+大文件详细大小1find . -type f -size +800M  -print0 | xargs -0 du -h
+
+文件大小排序1find . -type f -size +100M  -print0 | xargs -0 du -h | sort -nr
+
+查看项目占用内存1ps aux | grep *.jar | grep -v grep | awk &#x27;&#123;print $11 &quot;\t&quot; $6/1024&quot;MB&quot; &#125;&#x27;
+
+端口使用情况1ss -nplt
+
+替换文件信息1sed -i s/&#123;old&#125;/&#123;new&#125;/g `grep &#123;old&#125; -rl ./`
+
+查找文件中出现的次数1cat info.log |grep $&#123;search&#125; |w ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/16/ssl/" title="ssl">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/ly37Y1fzdr89Cpe.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ssl"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/16/ssl/" title="ssl">ssl</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-11-16 16:14:16"><i class="far fa-calendar-alt"></i>2020-11-16</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:56:05"><i class="fas fa-history"></i>2021-02-18</span></time></div><div class="content">切记ssl 私钥证书不能上传到github等公网
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/08/12/session-missing/" title="session-missing">     <img class="post_bg" data-src="https://i.loli.net/2020/08/12/tgGR5QEy1dznb69.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="session-missing"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/12/session-missing/" title="session-missing">session-missing</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-08-12 15:12:48"><i class="far fa-calendar-alt"></i>2020-08-12</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2020-12-24 22:29:18"><i class="fas fa-history"></i>2020-12-24</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/chrome/">chrome</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/session/">session</a></span></div><div class="content">session消失问题目前，本公司使用session方式进行登录验证。某天，有几位同事反馈登录异常情况，经过检查发现，在子iframe页面中发送的请求没有携带相应cookie。继而向上查询问题，发现chrome控制台中Application栏中Cookies没有对应域下cookie；检查登录接口，是正常的set-cookie的相关返回；因此怀疑是浏览器对不同域下的cookie进行了特殊处理，搜索后发现果然如此。
+发现网上有相同问题，例如：https://blog.csdn.net/sinat_36521655/article/details/104844667
+检查出问题同事的chrome浏览器版本，果然都是最新版84（大于80）。通过访问
+1chrome://flags
+
+设置sameSite相关属性为disable
+
+SameSite by default cookies
+Cookies without SameSite must be secure
+
+
+问题得到临时解决
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/07/02/redis-cluster/" title="redis-cluster">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/FMzVqxADs1HWwn6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="redis-cluster"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/02/redis-cluster/" title="redis-cluster">redis-cluster</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-07-02 10:28:34"><i class="far fa-calendar-alt"></i>2020-07-02</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:52:26"><i class="fas fa-history"></i>2021-02-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/redis-cluster/">redis cluster</a></span></div><div class="content">redis cluster集群搭建引用[1] https://note.youdao.com/ynoteshare1/index.html?id=20a304a49de9b12fc5792b9b8f096deb&amp;type=note
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/06/29/markdown-demo/" title="markdown-demo">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/ANOrd1BXuEgTtZV.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="markdown-demo"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/29/markdown-demo/" title="markdown-demo">markdown-demo</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-06-29 14:46:03"><i class="far fa-calendar-alt"></i>2020-06-29</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:50:36"><i class="fas fa-history"></i>2021-02-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/markdown/">markdown</a></span></div><div class="content">记录markdown使用模式，来源于部落格
+欢迎使用 Cmd Markdown 编辑阅读器
+我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，Cmd Markdown 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：
+
+
+整理知识，学习笔记
+发布日记，杂文，所见所想
+撰写发布技术文稿（代码支持）
+撰写发布学术论文（LaTeX 公式支持）
+
+
+
+除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：
+Windows/Mac/Linux 全平台客户端
+请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的  新文稿 或者使用快捷键 Ctrl+Alt+N。
+
+
+什么是 MarkdownMarkdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，粗体 或者 斜体 某些文字，更棒的是，它还可以
+1. 制 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/06/17/spring-cloud-gateway%E8%AE%B0%E5%BD%95/" title="spring-cloud-gateway记录">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/qVLm52jTMuC6FXk.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="spring-cloud-gateway记录"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/17/spring-cloud-gateway%E8%AE%B0%E5%BD%95/" title="spring-cloud-gateway记录">spring-cloud-gateway记录</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-06-17 18:15:59"><i class="far fa-calendar-alt"></i>2020-06-17</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:54:20"><i class="fas fa-history"></i>2021-02-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/spring-cloud-gateway/">spring-cloud-gateway</a></span></div><div class="content">背景目前使用spring-cloud-gateway为基构建了公司内部服务网关，遇到了一些问题，记录于此
+问题列表cloud 与 boot 对应关系cloud版本与boot版本需要有相应对应关系，官方有提供关系数据
+路由数据自定义数据来源自由定义，主要是将数据转换为RouteDefinition（路由定义类）
+
+继承RouteDefinitionRepository
+重写getAllRouteDefinitions方法由框架将RouteDefinition转换为真实的Route对象
+
+RouteDefinition中predicates可以使用
+12345678[  &#123;    &quot;name&quot; : &quot;Path&quot;,    &quot;args&quot; : &#123;      &quot;Path&quot; : &quot;/**&quot;    &#125;  &#125;]
+
+filters可以使用
+12345678[  &#123;    &quot;name&quot; : &quot;StripPrefix&quot;,  ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/05/22/cors-repeat/" title="cors-repeat">     <img class="post_bg" data-src="https://i.loli.net/2019/10/30/bpQnviZ3TAN8Pgm.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="cors-repeat"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/05/22/cors-repeat/" title="cors-repeat">cors-repeat</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-05-22 10:52:00"><i class="far fa-calendar-alt"></i>2020-05-22</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2020-07-21 11:31:28"><i class="fas fa-history"></i>2020-07-21</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/cors/">cors</a></span></div><div class="content">跨域请求头什么叫跨域简单来说，当浏览器前端去访问另一个源（协议+域名+端口）下的资源，即为跨域
+为什么会出现跨域问题浏览器根据安全策略，默认禁止跨域行为
+如何解决跨域问题
+jsoup
+cors 
+
+1. jsoup利用加载js、html等静态资源的方式进行跨域通信（不够灵活，不在本文讨论范围）
+2. cors返回头信息告知浏览器允许跨域
+即添加
+1234Access-Control-Allow-Origin: $&#123;请求头中的Origin&#125; or *（任一，一般不适用）Access-Control-Allow-Credentials: true or false 是否允许携带cookie，当设置为true时，allow-Origin不允许设置为*Access-Control-Allow-Headers： Content-Type,etc 允许的请求头 任意Access-Control-Allow-Methods: GET,POST  等请求方法
+至返回头信息中即可完成跨域配置。
+
+ 注意：当请求存在调用链时，有可能下游或上游服务已添加跨域设置，为避免错误，以下参数必须 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/3/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">tuean</div><div class="author-info__description">tuean's blog</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">Articles</div><div class="length_num">44</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">Tags</div><div class="length_num">37</div></a></div></div><div class="card-info-bookmark is-center"><button class="button--animated" id="bookmark-it" title="Bookmark"><i class="fas fa-bookmark"></i><span>Bookmark</span></button></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/tuean" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:tuean_z@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a href="/2022/01/24/2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/3f30472a880511ebb6edd017c2d2eca2.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="2021年度总结" alt="2021年度总结"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2022/01/24/2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" title="2021年度总结">2021年度总结</div><time class="aside-post_meta post-meta__date" title="Created 2022-01-24 10:18:27">2022-01-24</time></div></a></div><div class="aside-recent-post"><a href="/2021/12/13/pdf-xss/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/71e52c67f5094e44b92ccaed93db15c5.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="pdf-xss" alt="pdf-xss"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/12/13/pdf-xss/" title="pdf-xss">pdf-xss</div><time class="aside-post_meta post-meta__date" title="Created 2021-12-13 10:52:09">2021-12-13</time></div></a></div><div class="aside-recent-post"><a href="/2021/08/31/antdesign-form-validator/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/bbc58c3d998d4f389fdae649334873f7.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="antdesign-form-validator" alt="antdesign-form-validator"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/08/31/antdesign-form-validator/" title="antdesign-form-validator">antdesign-form-validator</div><time class="aside-post_meta post-meta__date" title="Created 2021-08-31 19:24:03">2021-08-31</time></div></a></div><div class="aside-recent-post"><a href="/2021/08/25/windowsKnowlodge/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/127f2bf2880511ebb6edd017c2d2eca2.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="windowsKnowlodge" alt="windowsKnowlodge"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/08/25/windowsKnowlodge/" title="windowsKnowlodge">windowsKnowlodge</div><time class="aside-post_meta post-meta__date" title="Created 2021-08-25 21:35:48">2021-08-25</time></div></a></div><div class="aside-recent-post"><a href="/2021/07/12/knowledge/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/235101-1553356261d822.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="knowledge" alt="knowledge"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/07/12/knowledge/" title="knowledge">knowledge</div><time class="aside-post_meta post-meta__date" title="Created 2021-07-12 18:51:09">2021-07-12</time></div></a></div></div></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/ant-design/" style="font-size: 16px; color: #999">ant-design</a> <a href="/tags/api/" style="font-size: 16px; color: #999">api</a> <a href="/tags/chrome/" style="font-size: 20px; color: #99a4b2">chrome</a> <a href="/tags/cors/" style="font-size: 16px; color: #999">cors</a> <a href="/tags/css/" style="font-size: 16px; color: #999">css</a> <a href="/tags/daterangepicker/" style="font-size: 16px; color: #999">daterangepicker</a> <a href="/tags/dubbo/" style="font-size: 16px; color: #999">dubbo</a> <a href="/tags/elasticsearch/" style="font-size: 16px; color: #999">elasticsearch</a> <a href="/tags/git/" style="font-size: 16px; color: #999">git</a> <a href="/tags/github/" style="font-size: 20px; color: #99a4b2">github</a> <a href="/tags/hexo/" style="font-size: 16px; color: #999">hexo</a> <a href="/tags/idea/" style="font-size: 18px; color: #999ea6">idea</a> <a href="/tags/java/" style="font-size: 16px; color: #999">java</a> <a href="/tags/jvm/" style="font-size: 16px; color: #999">jvm</a> <a href="/tags/linux/" style="font-size: 16px; color: #999">linux</a> <a href="/tags/mac-plugin/" style="font-size: 16px; color: #999">mac plugin</a> <a href="/tags/markdown/" style="font-size: 16px; color: #999">markdown</a> <a href="/tags/maven/" style="font-size: 18px; color: #999ea6">maven</a> <a href="/tags/node/" style="font-size: 16px; color: #999">node</a> <a href="/tags/problem/" style="font-size: 22px; color: #99a9bf">problem</a> <a href="/tags/react/" style="font-size: 18px; color: #999ea6">react</a> <a href="/tags/red-hat/" style="font-size: 16px; color: #999">red hat</a> <a href="/tags/redis-cluster/" style="font-size: 16px; color: #999">redis cluster</a> <a href="/tags/session/" style="font-size: 18px; color: #999ea6">session</a> <a href="/tags/shadowsocks/" style="font-size: 16px; color: #999">shadowsocks</a> <a href="/tags/shell/" style="font-size: 16px; color: #999">shell</a> <a href="/tags/spring/" style="font-size: 16px; color: #999">spring</a> <a href="/tags/spring-cloud-gateway/" style="font-size: 16px; color: #999">spring-cloud-gateway</a> <a href="/tags/springboot/" style="font-size: 18px; color: #999ea6">springboot</a> <a href="/tags/text-indent/" style="font-size: 16px; color: #999">text-indent</a> <a href="/tags/tomcat/" style="font-size: 16px; color: #999">tomcat</a> <a href="/tags/tool/" style="font-size: 16px; color: #999">tool</a> <a href="/tags/watermark/" style="font-size: 16px; color: #999">watermark</a> <a href="/tags/website/" style="font-size: 16px; color: #999">website</a> <a href="/tags/xss/" style="font-size: 16px; color: #999">xss</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/" style="font-size: 18px; color: #999ea6">个人项目</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 18px; color: #999ea6">前端</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/01/"><span class="card-archive-list-date">January 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/12/"><span class="card-archive-list-date">December 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">August 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">July 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">June 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">May 2021</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/02/"><span class="card-archive-list-date">February 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">December 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item more is-center"><a class="card-archive-list-link-more" href="/archives">
+              <span>More</span><i class="fas fa-angle-right"  ></i></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">Article :</div><div class="webinfo-article-count">44</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">Run time :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" publish_date="9/27/2019 00:00:00">     </div></div><div class="webinfo-item"><div class="webinfo-site-wordcount-name">Total Count :</div><div class="webinfo-site-wordcount">14.9k</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">UV :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">PV :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By tuean</div><div class="framework-info"><span>Driven </span><a target="_blank" rel="noopener" href="https://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button class="translate_chn_to_cht" id="translateLink" title="Switch Between Traditional Chinese And Simplified Chinese">簡</button><button id="darkmode" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="Setting"><i class="fas fa-cog"></i></button><button id="go-up" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/js/third-party/fireworks.js"></script><script defer id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script id="canvas_nest" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/third-party/canvas-nest.js"></script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/third-party/click_heart.js"></script><script src="https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js"></script><script>document.addEventListener('DOMContentLoaded', function() {
+  pangu.autoSpacingPage()
+})</script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script>var subtitleEffect = true
+if (subtitleEffect) { 
+  var typed = new Typed("#subtitle", {
+    strings: "为天地立心,为生命立命,为往圣继绝学,为天下开太平".split(","),
+    startDelay: 300,
+    typeSpeed: 150,
+    loop: true,
+    backSpeed: 50
+  })
+} else {
+  document.getElementById("subtitle").innerHTML = '为天地立心'
+}</script></body></html>
