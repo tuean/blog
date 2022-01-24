@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>tuean</title><meta name="description" content="tuean&#39;s blog"><meta name="keywords" content="tuean blog"><meta name="author" content="tuean"><meta name="copyright" content="tuean"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/avatar.png"><link rel="canonical" href="http://tuean.cn/page/4/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="tuean"><meta property="og:url" content="http://tuean.cn/page/4/"><meta property="og:site_name" content="tuean"><meta property="og:description" content="tuean&#39;s blog"><meta property="og:image" content="http://tuean.cn/img/avatar.png"><meta property="article:published_time" content="2022-01-24T07:02:38.009Z"><meta property="article:modified_time" content="2022-01-24T07:02:38.009Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: true,
+  copyright: {"languages":{"author":"Author: tuean","link":"Link: ","source":"Source: tuean","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: true    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.1"></head><body><canvas class="fireworks"></canvas><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">44</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">37</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://i.loli.net/2019/10/23/rGVfgibcAOs49EM.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">tuean</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">tuean</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/tuean" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:tuean_z@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/12/20/daterangepicker-position-problem/" title="daterangepicker-position-problem">     <img class="post_bg" data-src="http://www.005.tv/uploads/allimg/180508/13-1P50QK509147.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="daterangepicker-position-problem"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/12/20/daterangepicker-position-problem/" title="daterangepicker-position-problem">daterangepicker-position-problem</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2019-12-20 14:42:52"><i class="far fa-calendar-alt"></i>2019-12-20</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2019-12-23 17:20:48"><i class="fas fa-history"></i>2019-12-23</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/problem/">problem</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/daterangepicker/">daterangepicker</a></span></div><div class="content">daterangepicker 定位问题原因今天同事在一个老项目开发中发现了daterangerpicker生成出来的日期选择器固定在了页面元素，并没有随modal框的滚动而跟随其输入框滚动
+解决过程首先查看js代码是否有异常出现，无想到元素生成正常而定位异常，猜测是其动态生成的dom元素的position元素的问题，查看新生成元素样式
+1position:absolute
+无异常
+继而查看其父元素无定位元素，给其加上
+1position: relative
+
+仍显示异常，查阅官方文档及stackoverflow，发现一重要参数
+1parentEl
+根据官方定义
+
+parentEl: (string) jQuery selector of the parent element that the date range picker will be added to, if not provided this will be ‘body’
+
+如果不设置，父元素将为body 
+将其绑定为对应生成元素的父元素（即上述添加 position:relative）
+problem solved
+
+
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/12/19/react-setState-problem/" title="react-setState-problem">     <img class="post_bg" data-src="http://pic1.win4000.com/wallpaper/2019-11-20/5dd4dfc5e163b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="react-setState-problem"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/12/19/react-setState-problem/" title="react-setState-problem">react-setState-problem</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2019-12-19 17:17:51"><i class="far fa-calendar-alt"></i>2019-12-19</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2020-03-18 13:50:53"><i class="fas fa-history"></i>2020-03-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/problem/">problem</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/react/">react</a></span></div><div class="content">this.setState is not a function背景记录一下今天遇到的一个小问题下午在公司开发一款b端产品前端时，爆出一个回调问题，
+1this.setState is not a function
+
+具体逻辑为在请求完一个删除接口后重新请求当前页面数据接口，重新渲染页面。
+解决过程对应页面逻辑为在删除请求成功后，而请求使用Promise包装，通过then调用，因而当时想到的是this的指向问题，通过设置
+1bind
+进行解决
+尝试了一下，发现仍报该错误，怀疑是绑定错误，再将过程中涉及到的函数全部绑定
+1this.method &#x3D; this.method.bind(this)
+
+继续尝试，仍抛出该问题，通过查询stackoverflow等网站均提示为仅需bind即可解决问题
+遇事不决小黄鸭
+根据需求，从头开始梳理页面逻辑，在对应代码处添加console及debugger进行检测，发现this值已存在且正确，但是，点开this对应值，找到其中的setState，意外发现居然不是function
+1setStats: &#123;&#125;
+
+居然是个对象，于是恍 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/11/18/accessException/" title="accessException">     <img class="post_bg" data-src="https://www.diyimei.net/upload/2018/1523093805792748.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="accessException"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/18/accessException/" title="accessException">accessException</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2019-11-18 16:52:24"><i class="far fa-calendar-alt"></i>2019-11-18</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2019-12-23 17:19:01"><i class="fas fa-history"></i>2019-12-23</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/idea/">idea</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/problem/">problem</a></span></div><div class="content">idea出现 cann’t access class in the package今天在公司日常写代码过程选中，发现自己项目结构有问题；在进行一连串java文件的复制、剪切。黏贴后，重新进行maven的package操作时，发现项目中有报出类找不到的情况；在这里简单记录一下排查过程
+1. 尝试自动修复首先删除报错的import再尝试通过idea自动化工具修复，在mac环境下为option + enter，若有出现import即可自动导入
+2. 项目package确认由于是通过idea提供的自助话工具进行包名、类名、参数名的自动替换，首先核对下报错类的package是否正常特别注意拼写错误
+3. modules配置确认打开Project Structure，在modules栏目中查看是否正确定义sources文件夹，注意根目录
+4. 清理mavenmaven clean
+5. 清楚idea缓存通过File -&gt; Invalidate Caches / Restart， 选择 Invalidate and start清理缓存并重启idea
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/11/15/watermark/" title="watermark">     <img class="post_bg" data-src="http://m.imeitou.com/uploads/allimg/2018081608/surthcsugci.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="watermark"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/15/watermark/" title="watermark">watermark</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2019-11-15 10:01:50"><i class="far fa-calendar-alt"></i>2019-11-15</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2019-12-23 17:13:37"><i class="fas fa-history"></i>2019-12-23</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/watermark/">watermark</a></span></div><div class="content">水印明水印网上找了个实现
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889function watermark(settings) &#123;    debugger;    //默认设置    var defaultSettings=&#123;        watermark_txt:"text",        watermark_x:20,//水印起始位置x轴坐标        watermark_y:20,//水印起始位置Y轴坐标        watermark_rows:20,//水印行数        watermark_cols:20,//水印列数        watermark_x_space:100,//水印x轴间隔        watermark_y_space:50, ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/10/30/ckeditor/" title="ckeditor">     <img class="post_bg" data-src="https://i.loli.net/2019/10/30/bpQnviZ3TAN8Pgm.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ckeditor"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/10/30/ckeditor/" title="ckeditor">ckeditor</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2019-10-30 22:36:39"><i class="far fa-calendar-alt"></i>2019-10-30</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2019-12-31 13:58:46"><i class="fas fa-history"></i>2019-12-31</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/problem/">problem</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="content">ckeditor 图片上传修改背景公司使用ckeditor作为富文本空间，最近发现图片上传时，在链接返回后需要过一段时间才能访问到图片
+询问文件服务同事因对接原因无法处理，我这边决定从前端进行校验
+源码位置图片上传失败会显示一个红色图片（noimage.png），此处通过该图片找到对应代码位置为 
+1ckeditor&#x2F;plugins&#x2F;image&#x2F;dialogs&#x2F;image.js
+观察此处为处理图片异常逻辑，替换原有链接为 noimage.png 
+修改方案首先通过js判断图片是否存在
+1.8123456789function check_image_exist(src) &#123;    let image = new Image()    image = src       if (image.width() &gt; 0 || image.height() &gt; 0) &#123;        return true    &#125;    return false&#125;
+
+其次将原有代码封装为新函数oldFunction() ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/10/25/email-template/" title="email-template">     <img class="post_bg" data-src="https://i.loli.net/2019/10/30/PvZonkM8sVQ2Xjf.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="email-template"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/10/25/email-template/" title="email-template">email-template</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2019-10-25 17:46:58"><i class="far fa-calendar-alt"></i>2019-10-25</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2019-10-30 23:18:05"><i class="fas fa-history"></i>2019-10-30</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/">个人项目</a></span></div><div class="content">模板邮件发送工具功能在某些情况下，需要给很多收件人发送内容大致相同，但根据收件人填写不同的参数类型的邮件
+计划支持功能
+gui程序
+网页
+sdk包
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/10/25/amazon-sprider/" title="amazon-sprider">     <img class="post_bg" data-src="https://i.loli.net/2019/10/30/5lyRzMAwdLkFS4P.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="amazon-sprider"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/10/25/amazon-sprider/" title="amazon-sprider">amazon-sprider</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2019-10-25 10:24:49"><i class="far fa-calendar-alt"></i>2019-10-25</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2019-10-30 23:16:10"><i class="fas fa-history"></i>2019-10-30</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/">个人项目</a></span></div><div class="content">自用的亚马逊商品爬虫功能说明给定关键词，爬取对应亚马逊网站对应商品搜索结果
+当前版本v0.0.1
+爬取内容
+asin 商品id
+product name 商品名
+price 商品价格
+grade 评分
+number of comment 评论数
+detail page of product 详细页地址
+
+运行方式
+主函数中添加搜索词
+默认指定为亚马逊美国地址， 需要变更可修改 Constant类
+通过db.sql创建数据库实例
+执行
+结束后即可在db中看到数据
+
+todo list
+ 参数可配置
+ excel数据落地
+ 多线程请求
+ 软件页面
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/10/09/hexo/" title="hexo配合github搭建博客">     <img class="post_bg" data-src="https://i.loli.net/2019/10/30/4KvzoaEV21nQwjM.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo配合github搭建博客"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/10/09/hexo/" title="hexo配合github搭建博客">hexo配合github搭建博客</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2019-10-09 16:39:54"><i class="far fa-calendar-alt"></i>2019-10-09</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-07-13 13:15:22"><i class="fas fa-history"></i>2021-07-13</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/hexo/">hexo</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/github/">github</a></span></div><div class="content">hexo + github pages 搭建博客软件安装1. nodejs (hexo依赖nodejs， 已安装可跳过)
+windows/mac 进入node官方网址下载最新版并安装
+mac环境下可通过包管理器安装
+安装homebrew官网 或者通过以下命令   1/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+通过homebrew安装node   1brew install -g node
+每次执行homebrew后都会先执行update 目前由于各种原因耗时很大，可通过以下命令关闭   1export HOMEBREW_NO_AUTO_UPDATE=true
+验证是否安装完成      1node -v
+
+
+
+
+
+2. git (已安装可跳过)
+windows下 官网  
+mac下 
+安装 1homebrew install git
+校验 1git --version
+
+
+
+
+
+3. 安装hexo
+通过npm安装  1npm i -g ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/09/29/maven/" title="maven">     <img class="post_bg" data-src="https://i.loli.net/2019/10/30/EoyZbx7Ye4RT1st.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="maven"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/09/29/maven/" title="maven">maven</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2019-09-29 20:07:44"><i class="far fa-calendar-alt"></i>2019-09-29</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2019-10-30 22:40:37"><i class="fas fa-history"></i>2019-10-30</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/maven/">maven</a></span></div><div class="content">maven相关命令maven项目版本设置123mvn versions:set -DnewVersion=xxxmvn versions:commit
+
+maven提交源码添加plugin插件
+1234567891011121314151617181920&lt;build&gt;		&lt;plugins&gt;			&lt;plugin&gt;				&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;				&lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;				&lt;version&gt;$&#123;version&#125;&lt;/version&gt;				&lt;configuration&gt;					&lt;attach&gt;true&lt;/attach&gt;				&lt;/configuration&gt;				&lt;executions&gt;					&lt;execution&gt;						&lt;phase&gt ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/09/29/mac/" title="mac">     <img class="post_bg" data-src="https://i.loli.net/2019/10/23/D6fmyoisAOaYJQ2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mac"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/09/29/mac/" title="mac">mac</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2019-09-29 20:04:33"><i class="far fa-calendar-alt"></i>2019-09-29</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2019-11-17 18:57:26"><i class="fas fa-history"></i>2019-11-17</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/mac-plugin/">mac plugin</a></span></div><div class="content">idea plugins
+Active-power-mode
+Alibaba java Coding Guidelines
+find-bugs
+Free mybatis plugin
+freeMaker support
+GenerateSerialVersionUID
+I18n for java
+IDE Setting Sync
+Java Bytecode Decomplier
+Jenkins control plugin
+jetty integration
+Jrebel for intellij
+junit
+lombok plugin
+Markdown support
+stackoverflow
+ssh remote run
+statistic
+nyan progress bar
+Rainbow Brackets
+Meterial Theme UI 
+
+keymapmac os X 10.5
+scheme
+Darcula
+font
+fira code  16 1.0 mocaco
+mac
+Xcode
+idea
+vm
+pycharm
+webstorm
+goland
+chrome
+nav ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">tuean</div><div class="author-info__description">tuean's blog</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">Articles</div><div class="length_num">44</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">Tags</div><div class="length_num">37</div></a></div></div><div class="card-info-bookmark is-center"><button class="button--animated" id="bookmark-it" title="Bookmark"><i class="fas fa-bookmark"></i><span>Bookmark</span></button></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/tuean" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:tuean_z@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a href="/2022/01/24/2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/3f30472a880511ebb6edd017c2d2eca2.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="2021年度总结" alt="2021年度总结"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2022/01/24/2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" title="2021年度总结">2021年度总结</div><time class="aside-post_meta post-meta__date" title="Created 2022-01-24 10:18:27">2022-01-24</time></div></a></div><div class="aside-recent-post"><a href="/2021/12/13/pdf-xss/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/71e52c67f5094e44b92ccaed93db15c5.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="pdf-xss" alt="pdf-xss"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/12/13/pdf-xss/" title="pdf-xss">pdf-xss</div><time class="aside-post_meta post-meta__date" title="Created 2021-12-13 10:52:09">2021-12-13</time></div></a></div><div class="aside-recent-post"><a href="/2021/08/31/antdesign-form-validator/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/bbc58c3d998d4f389fdae649334873f7.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="antdesign-form-validator" alt="antdesign-form-validator"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/08/31/antdesign-form-validator/" title="antdesign-form-validator">antdesign-form-validator</div><time class="aside-post_meta post-meta__date" title="Created 2021-08-31 19:24:03">2021-08-31</time></div></a></div><div class="aside-recent-post"><a href="/2021/08/25/windowsKnowlodge/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/127f2bf2880511ebb6edd017c2d2eca2.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="windowsKnowlodge" alt="windowsKnowlodge"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/08/25/windowsKnowlodge/" title="windowsKnowlodge">windowsKnowlodge</div><time class="aside-post_meta post-meta__date" title="Created 2021-08-25 21:35:48">2021-08-25</time></div></a></div><div class="aside-recent-post"><a href="/2021/07/12/knowledge/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/235101-1553356261d822.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="knowledge" alt="knowledge"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/07/12/knowledge/" title="knowledge">knowledge</div><time class="aside-post_meta post-meta__date" title="Created 2021-07-12 18:51:09">2021-07-12</time></div></a></div></div></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/ant-design/" style="font-size: 16px; color: #999">ant-design</a> <a href="/tags/api/" style="font-size: 16px; color: #999">api</a> <a href="/tags/chrome/" style="font-size: 20px; color: #99a4b2">chrome</a> <a href="/tags/cors/" style="font-size: 16px; color: #999">cors</a> <a href="/tags/css/" style="font-size: 16px; color: #999">css</a> <a href="/tags/daterangepicker/" style="font-size: 16px; color: #999">daterangepicker</a> <a href="/tags/dubbo/" style="font-size: 16px; color: #999">dubbo</a> <a href="/tags/elasticsearch/" style="font-size: 16px; color: #999">elasticsearch</a> <a href="/tags/git/" style="font-size: 16px; color: #999">git</a> <a href="/tags/github/" style="font-size: 20px; color: #99a4b2">github</a> <a href="/tags/hexo/" style="font-size: 16px; color: #999">hexo</a> <a href="/tags/idea/" style="font-size: 18px; color: #999ea6">idea</a> <a href="/tags/java/" style="font-size: 16px; color: #999">java</a> <a href="/tags/jvm/" style="font-size: 16px; color: #999">jvm</a> <a href="/tags/linux/" style="font-size: 16px; color: #999">linux</a> <a href="/tags/mac-plugin/" style="font-size: 16px; color: #999">mac plugin</a> <a href="/tags/markdown/" style="font-size: 16px; color: #999">markdown</a> <a href="/tags/maven/" style="font-size: 18px; color: #999ea6">maven</a> <a href="/tags/node/" style="font-size: 16px; color: #999">node</a> <a href="/tags/problem/" style="font-size: 22px; color: #99a9bf">problem</a> <a href="/tags/react/" style="font-size: 18px; color: #999ea6">react</a> <a href="/tags/red-hat/" style="font-size: 16px; color: #999">red hat</a> <a href="/tags/redis-cluster/" style="font-size: 16px; color: #999">redis cluster</a> <a href="/tags/session/" style="font-size: 18px; color: #999ea6">session</a> <a href="/tags/shadowsocks/" style="font-size: 16px; color: #999">shadowsocks</a> <a href="/tags/shell/" style="font-size: 16px; color: #999">shell</a> <a href="/tags/spring/" style="font-size: 16px; color: #999">spring</a> <a href="/tags/spring-cloud-gateway/" style="font-size: 16px; color: #999">spring-cloud-gateway</a> <a href="/tags/springboot/" style="font-size: 18px; color: #999ea6">springboot</a> <a href="/tags/text-indent/" style="font-size: 16px; color: #999">text-indent</a> <a href="/tags/tomcat/" style="font-size: 16px; color: #999">tomcat</a> <a href="/tags/tool/" style="font-size: 16px; color: #999">tool</a> <a href="/tags/watermark/" style="font-size: 16px; color: #999">watermark</a> <a href="/tags/website/" style="font-size: 16px; color: #999">website</a> <a href="/tags/xss/" style="font-size: 16px; color: #999">xss</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/" style="font-size: 18px; color: #999ea6">个人项目</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 18px; color: #999ea6">前端</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/01/"><span class="card-archive-list-date">January 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/12/"><span class="card-archive-list-date">December 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">August 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">July 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">June 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">May 2021</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/02/"><span class="card-archive-list-date">February 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">December 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item more is-center"><a class="card-archive-list-link-more" href="/archives">
+              <span>More</span><i class="fas fa-angle-right"  ></i></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">Article :</div><div class="webinfo-article-count">44</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">Run time :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" publish_date="9/27/2019 00:00:00">     </div></div><div class="webinfo-item"><div class="webinfo-site-wordcount-name">Total Count :</div><div class="webinfo-site-wordcount">14.6k</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">UV :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">PV :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By tuean</div><div class="framework-info"><span>Driven </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button class="translate_chn_to_cht" id="translateLink" title="Switch Between Traditional Chinese And Simplified Chinese">簡</button><button id="darkmode" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="Setting"><i class="fas fa-cog"></i></button><button id="go-up" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/js/third-party/fireworks.js"></script><script defer id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script id="canvas_nest" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/third-party/canvas-nest.js"></script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/third-party/click_heart.js"></script><script src="https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js"></script><script>document.addEventListener('DOMContentLoaded', function() {
+  pangu.autoSpacingPage()
+})</script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script>var subtitleEffect = true
+if (subtitleEffect) { 
+  var typed = new Typed("#subtitle", {
+    strings: "为天地立心,为生命立命,为往圣继绝学,为天下开太平".split(","),
+    startDelay: 300,
+    typeSpeed: 150,
+    loop: true,
+    backSpeed: 50
+  })
+} else {
+  document.getElementById("subtitle").innerHTML = '为天地立心'
+}</script></body></html>

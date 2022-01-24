@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>tuean</title><meta name="description" content="tuean&#39;s blog"><meta name="keywords" content="tuean blog"><meta name="author" content="tuean"><meta name="copyright" content="tuean"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/avatar.png"><link rel="canonical" href="http://tuean.cn/page/3/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="tuean"><meta property="og:url" content="http://tuean.cn/page/3/"><meta property="og:site_name" content="tuean"><meta property="og:description" content="tuean&#39;s blog"><meta property="og:image" content="http://tuean.cn/img/avatar.png"><meta property="article:published_time" content="2022-01-24T07:02:37.988Z"><meta property="article:modified_time" content="2022-01-24T07:02:37.988Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: true,
+  copyright: {"languages":{"author":"Author: tuean","link":"Link: ","source":"Source: tuean","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: true    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.1"></head><body><canvas class="fireworks"></canvas><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">44</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">37</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://i.loli.net/2019/10/23/rGVfgibcAOs49EM.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">tuean</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">tuean</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/tuean" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:tuean_z@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/04/03/dubbo-filter-config/" title="dubbo-filter-config">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/QZqbp94dkczXo3M.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="dubbo-filter-config"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/04/03/dubbo-filter-config/" title="dubbo-filter-config">dubbo-filter-config</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-04-03 15:35:52"><i class="far fa-calendar-alt"></i>2020-04-03</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:49:44"><i class="fas fa-history"></i>2021-02-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/dubbo/">dubbo</a></span></div><div class="content">dubbo filter 在idea中的配置问题公司目前使用到dubbo作为rpc调用的框架，但当前对于监控这块暂无对应实现
+前几天接到领导指示，需要提供rpc调用日志监控的sdk功能包
+查询了一下官网，类同于添加http请求日志的监控，可利用dubbo filter即可实现改功能:
+dubbo filter
+但是通过配置改完后，发现代码并不生效，怀疑对应的filter并没有正确加载，通过debug找到对应实现类：
+1org.apache.dubbo.common.extension.ExtensionLoader#loadDirectory
+
+观察到对应的加载语句
+1urls = classLoader.getResources(fileName)
+
+此时urls.hasMoreElements()为false，故而无法触发if下的 loadResource 方法，进而没有加载进入我们的filter
+仔细观察，该fileName为 /META-INF/dubbo/xxx.xxx
+需要文件对应的层级为
+123-- META-INF-----dubbo--------xxx.xxx
+
+而 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/03/22/vue-baidu-map/" title="vue-baidu-map">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/kM97YQefjbUqnGR.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue-baidu-map"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/03/22/vue-baidu-map/" title="vue-baidu-map">vue-baidu-map</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-03-22 22:43:16"><i class="far fa-calendar-alt"></i>2020-03-22</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:58:04"><i class="fas fa-history"></i>2021-02-18</span></time></div><div class="content">vue-baidu-map踩坑记录替换定位图标
+使用网络图标： 直接使用url即可
+使用本地图标：
+需要下载的图片不能太大
+在项目中可以通过 1import img from &#39;..&#x2F;assets&#x2F;img&#x2F;xxx.png&#39;
+ 1:icon&#x3D;&quot;&#123;url: img, size: &#123;width: 300, height: 157&#125;&#125;&quot;
+
+
+
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/03/17/idea%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/" title="idea启动失败">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/P4YgnEz2u1sCty5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="idea启动失败"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/03/17/idea%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5/" title="idea启动失败">idea启动失败</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-03-17 10:59:33"><i class="far fa-calendar-alt"></i>2020-03-17</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:50:13"><i class="fas fa-history"></i>2021-02-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/idea/">idea</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/problem/">problem</a></span></div><div class="content">idea启动失败idea打开无反应的处理方式
+
+找到idea根目录下bin文件夹 windows环境下为idea.bat 
+编辑该文件 在最后添加 1pause
+双击执行 本次爆出 1Initial heap size set to a larger value than the maximum heap size
+按照搜索引擎查询的，修改bin目录下的.vmoptions文件，调整Xmx、Xms的大小（注意Xmx的大小要比Xms小）
+一般来说，调整完成后即可恢复正常打开
+若仍无法打开，使用everything搜索以下的文件名 1.vmoptions
+可以找到系统用户目录下存在另一份配置文件 1C:\Users\&#123;user&#125;\.IntelliJIdea2019.3\config\idea64.exe.vmoptions
+该文件中第一行注释表示其为默认配置 1# custom IntelliJ Idea VM options
+修改该文件的Xms、Xmx值即可
+
+资料参考
+idea support
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/03/11/redhat%E4%B8%8B%E5%AE%89%E8%A3%85node%E6%8A%A5%E9%94%99%E4%BF%AE%E5%A4%8D/" title="redhat下安装node报错修复">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/usOb3vTM5ZSx47U.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="redhat下安装node报错修复"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/03/11/redhat%E4%B8%8B%E5%AE%89%E8%A3%85node%E6%8A%A5%E9%94%99%E4%BF%AE%E5%A4%8D/" title="redhat下安装node报错修复">redhat下安装node报错修复</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-03-11 17:46:22"><i class="far fa-calendar-alt"></i>2020-03-11</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:51:40"><i class="fas fa-history"></i>2021-02-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/linux/">linux</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/red-hat/">red hat</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/node/">node</a></span></div><div class="content">node安装异常当前环境red hat6.8
+node版本12.16.1
+问题原因解压完node***.tar.gz后，抛出
+1GLIBCXX.3.4.14 not found
+
+搜索后发现是对应系统版本较低导致与新版本node的打包环境相差太大，需要升级gcc相关基础设施
+操作手册搜索后找到了一个操作文档
+注意事项注意升级对应的版本，版本变动过大会出现更多关联包的升级需求
+后续操作注意按当前方式操作安装的node及npm，需要手动添加软链
+123ln -s /xxx/npm /usr/bin/npmln -s /xxx/node /usr/bin/node
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/02/25/css-demo-star/" title="css-demo-star">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/eDrMmaJvkguslIV.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="css-demo-star"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/02/25/css-demo-star/" title="css-demo-star">css-demo-star</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-02-25 03:21:39"><i class="far fa-calendar-alt"></i>2020-02-25</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:47:41"><i class="fas fa-history"></i>2021-02-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/css/">css</a></span></div><div class="content">一个星空demo的学习最近在家上班，生活作息已经混乱了，大半夜刷b站看到了一个自制星空背景的css样式视频
+由于个人后端出生，对能写好css的人非常崇拜（就像碰到光速QA的上帝一样）
+一时兴起，关注了该github仓库，以此学习一波
+js部分1.81234567891011121314151617181920$(document).ready(function() &#123;            var stars = 800; /*星星的密集程度，数字越大越多*/            var $stars = $(".stars");            var r = 800; /*星星的看起来的距离,值越大越远,可自行调制到自己满意的样子*/            for (var i = 0; i &lt; stars; i++) &#123;                var $star = $("&lt;div/&gt;").addClass("star");                console.log($star)                $s ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/01/09/multi-module-compilar-error/" title="multi-module-compilar-error">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/NsSJFXWM1b2puaK.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="multi-module-compilar-error"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/01/09/multi-module-compilar-error/" title="multi-module-compilar-error">multi-module-compilar-error</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-01-09 17:54:34"><i class="far fa-calendar-alt"></i>2020-01-09</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:51:12"><i class="fas fa-history"></i>2021-02-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/problem/">problem</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/maven/">maven</a></span></div><div class="content">多模块maven项目问题前提过程在一次项目搭建过程中，原先创建单个maven项目后续由于需要放出dubbo接口，将api单独拆出这样就由原有的单module项目结果转换为一父多子的结构，如下
+
+root pom.xml
+module 1 extends root 
+module 2 extends root
+
+
+
+问题描述在开发过程中发现，在子模块中直接run方法会提示
+123456找不到主类&#96;&#96;&#96;    而执行build或rebuild project等会提示&#96;&#96;&#96;text找不到程序包
+
+而通过maven的compile方法后，一切正常，从而导致改一次代码需要手动触发compile，非常不方便
+问题排查首先怀疑是idea的配置缓存问题，
+1file -&gt; Invalidate Caches &#x2F; Restart
+清除完缓存后问题仍存在；
+怀疑是maven异常，删去相关plugin和项目reimport后，仍未得到解决；
+接着观察Project Structure，观察各module的output path设置，确认设置正确 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/01/07/xmlschema-read/" title="xmlschema-read">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/alfmWNuB8ZpQPAR.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="xmlschema-read"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/01/07/xmlschema-read/" title="xmlschema-read">xmlschema-read</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-01-07 16:14:10"><i class="far fa-calendar-alt"></i>2020-01-07</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:58:37"><i class="fas fa-history"></i>2021-02-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/problem/">problem</a></span></div><div class="content">webService报错报错内容如下1Exception in thread &quot;main&quot; java.lang.NoSuchMethodError: org.apache.ws.commons.schema.XmlSchemaCollection.read(Lorg&#x2F;w3c&#x2F;dom&#x2F;Document;Ljava&#x2F;lang&#x2F;String;)Lorg&#x2F;apache&#x2F;ws&#x2F;commons&#x2F;schema&#x2F;XmlSchema;
+
+修复
+观察是否导入
+1&lt;artifactId&gt;xmlchema-core&lt;/artifactId&gt;
+或者
+1&lt;artifactId&gt;XmlSchema&lt;/artifactId&gt;
+
+查找该方法，其位于
+12&lt;artifactId&gt;xmlchema-core&lt;/artifactId&gt;&lt;version&gt;2.0.3&lt;/version&gt;
+
+解决项目中的jar包版本冲突 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/01/02/springboot-400/" title="springboot-400">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/zJ6jI9xiYmGXaqF.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="springboot-400"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/01/02/springboot-400/" title="springboot-400">springboot-400</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-01-02 15:57:50"><i class="far fa-calendar-alt"></i>2020-01-02</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:55:33"><i class="fas fa-history"></i>2021-02-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/problem/">problem</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/springboot/">springboot</a></span></div><div class="content">springboot接口返回400问题在其他接口正常访问情况下，一般而言是由于前端请求参数无法与实体类相对应
+
+
+在使用lombok的情况下，检查构造器相关注解，例如
+1@AllArgsConstructor
+1@NoArgsConstructor
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/12/31/fileReader-readAsDataUrl/" title="fileReader-readAsDataUrl">     <img class="post_bg" data-src="https://i.loli.net/2019/10/30/bpQnviZ3TAN8Pgm.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="fileReader-readAsDataUrl"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/12/31/fileReader-readAsDataUrl/" title="fileReader-readAsDataUrl">fileReader-readAsDataUrl</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2019-12-31 18:08:36"><i class="far fa-calendar-alt"></i>2019-12-31</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2019-12-31 18:22:36"><i class="fas fa-history"></i>2019-12-31</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/problem/">problem</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="content">fileReader使用承接上文 图片上传回显问题前端修复
+最近又在另一项目中发现了这一问题，继续使用前端轮训获取感觉体验不佳，询问前端专业小伙伴后，推荐使用FileReader直接展示本地文件
+
+当然，使用本地图片需要有如下前提：
+
+后端端口上传结果可信，成功即文件上传ok
+本地浏览器版本要求较新
+
+
+根据官方文档，了解到FileReader支持将文件转为url地址，具体可见https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL
+根据如上文档，去除了原先onerror处相关方法，只需修改原有ajax代码如下：
+123456let reader = new FileReader()reader.readAsDataURL(response)reader.onload = (event) =&gt; &#123;    let newUrl = event.target.result;    // your code&#125;
+
+
+总结总结一下在技术这一层面，该实现方法较为简单，代码量不大，且客 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/12/23/text-indent/" title="text-indent">     <img class="post_bg" data-src="https://i.loli.net/2021/02/18/jgAIcFqukbKDpf7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="text-indent"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/12/23/text-indent/" title="text-indent">text-indent</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2019-12-23 17:12:07"><i class="far fa-calendar-alt"></i>2019-12-23</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2021-02-18 16:56:26"><i class="fas fa-history"></i>2021-02-18</span></time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/problem/">problem</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/text-indent/">text-indent</a></span></div><div class="content">前端显示异常背景今天公司同事发现了一个前端问题，在点击打开带有checkbox的下拉框时，存在下拉框对应显示空格定位异常，具体表现为
+
+在chrome70版本下显示正常
+在chrome79版本下出现如下问题
+当元素数量过多，存在overflow-y的情况下，显示正常
+当元素数量不充足时，下拉行整体往左便宜，显示异常
+当显示异常时，打开控制台，任意修改一css样式，页面重新渲染正常
+
+
+
+排查过程
+观察页面，判断是否有往左偏移的代码，当时没有找到，猜测是其他方式实现
+检查源码，该项目属于老项目，下拉菜单通过jsp中的js代码硬编码而成，查看的非常痛苦，检查后没有发现js逻辑问题
+尝试修改checkbox实现方式，通过替换原先笔者给其他同事完善的一份，结果样式显示正常
+初步确定为是css样式问题，由于js绑定了一系列的对应操作，替换checkbox方案需要时间过长，尝试修复该问题
+继续观察页面，根据修改样式后，页面显示正常，尝试特殊方法修复，在下拉菜单展开后手动触发checked=&gt;not checked状态变更操作，期待能自动适应
+测试结果发现未能显示正常
+求助前端组同学，通过控制 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">tuean</div><div class="author-info__description">tuean's blog</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">Articles</div><div class="length_num">44</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">Tags</div><div class="length_num">37</div></a></div></div><div class="card-info-bookmark is-center"><button class="button--animated" id="bookmark-it" title="Bookmark"><i class="fas fa-bookmark"></i><span>Bookmark</span></button></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/tuean" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:tuean_z@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a href="/2022/01/24/2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/3f30472a880511ebb6edd017c2d2eca2.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="2021年度总结" alt="2021年度总结"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2022/01/24/2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" title="2021年度总结">2021年度总结</div><time class="aside-post_meta post-meta__date" title="Created 2022-01-24 10:18:27">2022-01-24</time></div></a></div><div class="aside-recent-post"><a href="/2021/12/13/pdf-xss/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/71e52c67f5094e44b92ccaed93db15c5.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="pdf-xss" alt="pdf-xss"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/12/13/pdf-xss/" title="pdf-xss">pdf-xss</div><time class="aside-post_meta post-meta__date" title="Created 2021-12-13 10:52:09">2021-12-13</time></div></a></div><div class="aside-recent-post"><a href="/2021/08/31/antdesign-form-validator/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/bbc58c3d998d4f389fdae649334873f7.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="antdesign-form-validator" alt="antdesign-form-validator"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/08/31/antdesign-form-validator/" title="antdesign-form-validator">antdesign-form-validator</div><time class="aside-post_meta post-meta__date" title="Created 2021-08-31 19:24:03">2021-08-31</time></div></a></div><div class="aside-recent-post"><a href="/2021/08/25/windowsKnowlodge/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/127f2bf2880511ebb6edd017c2d2eca2.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="windowsKnowlodge" alt="windowsKnowlodge"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/08/25/windowsKnowlodge/" title="windowsKnowlodge">windowsKnowlodge</div><time class="aside-post_meta post-meta__date" title="Created 2021-08-25 21:35:48">2021-08-25</time></div></a></div><div class="aside-recent-post"><a href="/2021/07/12/knowledge/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://image-1256217908.cos.ap-shanghai.myqcloud.com/235101-1553356261d822.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="knowledge" alt="knowledge"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/07/12/knowledge/" title="knowledge">knowledge</div><time class="aside-post_meta post-meta__date" title="Created 2021-07-12 18:51:09">2021-07-12</time></div></a></div></div></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/ant-design/" style="font-size: 16px; color: #999">ant-design</a> <a href="/tags/api/" style="font-size: 16px; color: #999">api</a> <a href="/tags/chrome/" style="font-size: 20px; color: #99a4b2">chrome</a> <a href="/tags/cors/" style="font-size: 16px; color: #999">cors</a> <a href="/tags/css/" style="font-size: 16px; color: #999">css</a> <a href="/tags/daterangepicker/" style="font-size: 16px; color: #999">daterangepicker</a> <a href="/tags/dubbo/" style="font-size: 16px; color: #999">dubbo</a> <a href="/tags/elasticsearch/" style="font-size: 16px; color: #999">elasticsearch</a> <a href="/tags/git/" style="font-size: 16px; color: #999">git</a> <a href="/tags/github/" style="font-size: 20px; color: #99a4b2">github</a> <a href="/tags/hexo/" style="font-size: 16px; color: #999">hexo</a> <a href="/tags/idea/" style="font-size: 18px; color: #999ea6">idea</a> <a href="/tags/java/" style="font-size: 16px; color: #999">java</a> <a href="/tags/jvm/" style="font-size: 16px; color: #999">jvm</a> <a href="/tags/linux/" style="font-size: 16px; color: #999">linux</a> <a href="/tags/mac-plugin/" style="font-size: 16px; color: #999">mac plugin</a> <a href="/tags/markdown/" style="font-size: 16px; color: #999">markdown</a> <a href="/tags/maven/" style="font-size: 18px; color: #999ea6">maven</a> <a href="/tags/node/" style="font-size: 16px; color: #999">node</a> <a href="/tags/problem/" style="font-size: 22px; color: #99a9bf">problem</a> <a href="/tags/react/" style="font-size: 18px; color: #999ea6">react</a> <a href="/tags/red-hat/" style="font-size: 16px; color: #999">red hat</a> <a href="/tags/redis-cluster/" style="font-size: 16px; color: #999">redis cluster</a> <a href="/tags/session/" style="font-size: 18px; color: #999ea6">session</a> <a href="/tags/shadowsocks/" style="font-size: 16px; color: #999">shadowsocks</a> <a href="/tags/shell/" style="font-size: 16px; color: #999">shell</a> <a href="/tags/spring/" style="font-size: 16px; color: #999">spring</a> <a href="/tags/spring-cloud-gateway/" style="font-size: 16px; color: #999">spring-cloud-gateway</a> <a href="/tags/springboot/" style="font-size: 18px; color: #999ea6">springboot</a> <a href="/tags/text-indent/" style="font-size: 16px; color: #999">text-indent</a> <a href="/tags/tomcat/" style="font-size: 16px; color: #999">tomcat</a> <a href="/tags/tool/" style="font-size: 16px; color: #999">tool</a> <a href="/tags/watermark/" style="font-size: 16px; color: #999">watermark</a> <a href="/tags/website/" style="font-size: 16px; color: #999">website</a> <a href="/tags/xss/" style="font-size: 16px; color: #999">xss</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/" style="font-size: 18px; color: #999ea6">个人项目</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 18px; color: #999ea6">前端</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/01/"><span class="card-archive-list-date">January 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/12/"><span class="card-archive-list-date">December 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">August 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">July 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">June 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">May 2021</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/02/"><span class="card-archive-list-date">February 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">December 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item more is-center"><a class="card-archive-list-link-more" href="/archives">
+              <span>More</span><i class="fas fa-angle-right"  ></i></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">Article :</div><div class="webinfo-article-count">44</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">Run time :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" publish_date="9/27/2019 00:00:00">     </div></div><div class="webinfo-item"><div class="webinfo-site-wordcount-name">Total Count :</div><div class="webinfo-site-wordcount">14.6k</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">UV :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">PV :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By tuean</div><div class="framework-info"><span>Driven </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button class="translate_chn_to_cht" id="translateLink" title="Switch Between Traditional Chinese And Simplified Chinese">簡</button><button id="darkmode" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="Setting"><i class="fas fa-cog"></i></button><button id="go-up" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/js/third-party/fireworks.js"></script><script defer id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script id="canvas_nest" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/third-party/canvas-nest.js"></script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/third-party/click_heart.js"></script><script src="https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js"></script><script>document.addEventListener('DOMContentLoaded', function() {
+  pangu.autoSpacingPage()
+})</script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script>var subtitleEffect = true
+if (subtitleEffect) { 
+  var typed = new Typed("#subtitle", {
+    strings: "为天地立心,为生命立命,为往圣继绝学,为天下开太平".split(","),
+    startDelay: 300,
+    typeSpeed: 150,
+    loop: true,
+    backSpeed: 50
+  })
+} else {
+  document.getElementById("subtitle").innerHTML = '为天地立心'
+}</script></body></html>
